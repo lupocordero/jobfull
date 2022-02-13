@@ -16,17 +16,16 @@ const jobs = [
 function App() {
   return (
     <>
+      <h1 className="App-logo">JOBSS</h1>
       <JobCounter />
   
       <JobSearch />
         
       <JobList>
         {jobs.map(job => (
-          <JobPost key={job.id} title={job.title} />
+          <JobPost key={job.id} title={job.title} company={job.company}/>
         ))}
-      </JobList>
-      <AddJobButton />
-      
+      </JobList>      
     </>
   );
 }

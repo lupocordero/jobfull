@@ -1,10 +1,11 @@
 import React from "react";
+import "./JobPost.css"
 
 function JobPost(props) {
     return (
-        <li>
-            <span>C</span>
-            <p>{props.title}</p>
+        <li className="Item">
+            <h2>{props.title}</h2>
+            <h3>{props.company}</h3>
         </li>
     )   
 
