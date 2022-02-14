@@ -3,7 +3,7 @@ import "./JobList.css"
 
 function JobList(props) {
     return (
-        <section>
+        <section className="joblist-wrapper">
             <ul>
                 {props.children}
             </ul>
