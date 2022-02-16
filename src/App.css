@@ -1,8 +1,3 @@
-ul {
-  list-style: none;
-  padding-inline-start:0;
-}
-
 .App-logo {
   font-family: 'Comfortaa', cursive;
   font-size: 3.1rem;
@@ -11,20 +6,45 @@ ul {
 
 .mainlogo {
   width: 4rem;
-  padding-right: 10px;
+  padding-right: 0 0 0 0px;
 }
 
 .top {
-  width:30vw;
+  width: 60vw;
   display: flex;
   flex-direction: row;
   align-items:center;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .middle {
   display: flex;
   flex-direction: column;
+}
 
+.navbar {
+  border-bottom: solid 1px #EBEBEB;
+  padding-bottom: 30px;
+
+}
+.bottom-tab-nav {
+  border-top: solid 1px #EBEBEB;
+}
+.nav-link  {
+  color: #55575b;
+}
+
+.bottom-nav-link  {
+  color: #55575b;
+}
+.bottom-nav-link.active {
+  color: #ec96e4 !important;
+}
+.bottom-tab-label {
+  font-size: 12px;
+}
+
+a {
+  color: #55575b !important;
 }

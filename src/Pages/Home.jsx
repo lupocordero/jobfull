@@ -58,12 +58,10 @@ const jobs = [
 function Home(props) {
   return (
     <>
-      
-
       <div className="middle">
-      <JobCounter />
+        <JobCounter />
 
-      <JobSearch />
+        <JobSearch />
       </div>
 
       <JobList>
