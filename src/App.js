@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {Home} from './Pages/Home';
 import {Favs} from './Pages/Favs';
 import {Profile} from './Pages/Profile';
-import {Navigation} from './Navigation';
+import {Navigation} from './Navigation/Navigation';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
       <Navigation />
         <Routes>
-          <Route path="/home" element={<Home/>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/favorites" element={<Favs/>} />
           <Route path="/profile" element={<Profile/>} />
         </Routes>

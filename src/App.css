@@ -48,3 +48,13 @@
 a {
   color: #55575b !important;
 }
+
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
