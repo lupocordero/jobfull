@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
+    console.log('Triggering')
     const jobs = [
         {
           id: 1,
@@ -52,7 +53,7 @@ router.get('/', (req, res) => {
           link: "",
         },
       ];
-    res.end(JSON.stringify(jobs));
+    res.send(jobs);
 });
 
 module.exports = router;
